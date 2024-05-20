@@ -15,8 +15,10 @@
                :value "Messages"}
               {:key   :i/wallet
                :value "Wallet"}
-              {:key   :i/browser
-               :value "Browser"}]}
+              {:key   :i/homi
+               :value "Homi AI"}
+              {:key   :i/iot
+               :value "Devices"}]}
    {:key :selected? :type :boolean}
    {:key :pass-through? :type :boolean}
    {:key :new-notifications? :type :boolean}

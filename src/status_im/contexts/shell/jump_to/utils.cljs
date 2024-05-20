@@ -64,8 +64,9 @@
   (case stack-id
     :communities-stack (reset! state/load-communities-stack? true)
     :chats-stack       (reset! state/load-chats-stack? true)
+    :homi-stack     (reset! state/load-homi-stack? true)
+    :iot-stack     (reset! state/load-iot-stack? true)
     :wallet-stack      (reset! state/load-wallet-stack? true)
-    :browser-stack     (reset! state/load-browser-stack? true)
     ""))
 
 (defn change-selected-stack-id
@@ -82,8 +83,9 @@
   (let [selected-stack-id @state/selected-stack-id]
     (reset! state/load-communities-stack? (= selected-stack-id :communities-stack))
     (reset! state/load-chats-stack? (= selected-stack-id :chats-stack))
-    (reset! state/load-wallet-stack? (= selected-stack-id :wallet-stack))
-    (reset! state/load-browser-stack? (= selected-stack-id :browser-stack))))
+    (reset! state/load-homi-stack? (= selected-stack-id :homi-stack))
+    (reset! state/load-iot-stack? (= selected-stack-id :iot-stack))
+    (reset! state/load-wallet-stack? (= selected-stack-id :wallet-stack))))
 
 (defn reset-floating-screens
   []

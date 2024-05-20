@@ -1,6 +1,5 @@
 (ns status-im.contexts.shell.jump-to.components.home-stack.view
   (:require
-    [legacy.status-im.ui.screens.browser.stack :as browser.stack]
     [quo.theme :as quo.theme]
     [react-native.reanimated :as reanimated]
     [status-im.contexts.chat.home.view :as chat]
@@ -17,7 +16,8 @@
   (case stack-id
     :communities-stack @state/load-communities-stack?
     :chats-stack       @state/load-chats-stack?
-    :browser-stack     @state/load-browser-stack?
+    :homi-stack     @state/load-homi-stack?
+    :iot-stack      @state/load-iot-stack?
     :wallet-stack      @state/load-wallet-stack?))
 
 (defn- f-stack-view
@@ -32,8 +32,9 @@
    (case stack-id
      :communities-stack [:f> communities/view]
      :chats-stack       [:f> chat/view]
-     :wallet-stack      [wallet/view]
-     :browser-stack     [browser.stack/browser-stack]
+     :homi-stack        [:f> chat/view]
+     :iot-stack      [:f> chat/view]
+     :wallet-stack     [wallet/view]
      [:<>])])
 
 (defn lazy-screen
@@ -55,5 +56,6 @@
                :height (- height alert-banners-top-margin)})}
      [lazy-screen :communities-stack shared-values]
      [lazy-screen :chats-stack shared-values]
-     [lazy-screen :browser-stack shared-values]
+     [lazy-screen :homi-stack shared-values]
+     [lazy-screen :iot-stack shared-values]
      [lazy-screen :wallet-stack shared-values]]))

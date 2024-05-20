@@ -16,4 +16,5 @@
 (def load-communities-stack? (reagent/atom false))
 (def load-chats-stack? (reagent/atom false))
 (def load-wallet-stack? (reagent/atom false))
-(def load-browser-stack? (reagent/atom false))
+(def load-homi-stack? (reagent/atom false))
+(def load-iot-stack? (reagent/atom false))

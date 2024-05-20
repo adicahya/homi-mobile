@@ -12,26 +12,29 @@
 (def ^:const bottom-tab-width 90)
 
 ;; Stacks
-(def ^:const stacks-ids [:communities-stack :chats-stack :wallet-stack :browser-stack])
+(def ^:const stacks-ids [:communities-stack :chats-stack :wallet-stack :homi-stack :iot-stack])
 
 ;; Keywords
 (def ^:const stacks-opacity-keywords
   {:communities-stack :communities-stack-opacity
    :chats-stack       :chats-stack-opacity
    :wallet-stack      :wallet-stack-opacity
-   :browser-stack     :browser-stack-opacity})
+   :homi-stack        :homi-stack-opacity
+   :iot-stack         :iot-stack-opacity})
 
 (def ^:const tabs-icon-color-keywords
   {:communities-stack :communities-tab-icon-color
    :chats-stack       :chats-tab-icon-opacity
    :wallet-stack      :wallet-tab-icon-opacity
-   :browser-stack     :browser-tab-icon-opacity})
+   :homi-stack     :homi-tab-icon-opacity
+   :iot-stack     :iot-tab-icon-opacity})
 
 (def ^:const stacks-z-index-keywords
   {:communities-stack :communities-stack-z-index
    :chats-stack       :chats-stack-z-index
    :wallet-stack      :wallet-stack-z-index
-   :browser-stack     :browser-stack-z-index})
+   :homi-stack     :homi-stack-z-index
+   :iot-stack     :iot-stack-z-index})
 
 ;; Home stack states
 (def ^:const close-without-animation 0)

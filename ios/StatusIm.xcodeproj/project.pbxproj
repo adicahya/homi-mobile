@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -412,8 +412,6 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 8B5X2M6H2Y;
-						ProvisioningStyle = Manual;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
@@ -601,12 +599,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Status-StatusIm/Pods-Status-StatusIm-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift/CryptoSwift.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/RCTI18nStrings.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CryptoSwift.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCTI18nStrings.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
@@ -623,12 +623,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Status-StatusImPR/Pods-Status-StatusImPR-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift/CryptoSwift.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/RCTI18nStrings.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CryptoSwift.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCTI18nStrings.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
@@ -667,12 +669,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Status-StatusIm-StatusImTests/Pods-Status-StatusIm-StatusImTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift/CryptoSwift.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/RCTI18nStrings.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CryptoSwift.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCTI18nStrings.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
@@ -771,8 +775,10 @@
 				BUNDLE_ID_SUFFIX = .debug;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8B5X2M6H2Y;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58FKNDJTS9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -789,7 +795,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = im.status.ethereum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matera.homi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -808,9 +814,10 @@
 				BUNDLE_ID_SUFFIX = "";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 8B5X2M6H2Y;
+				DEVELOPMENT_TEAM = 58FKNDJTS9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -823,7 +830,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = im.status.ethereum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matera.homi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -846,7 +853,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CUSTOM_PRODUCT_NAME = "Status Debug";
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8B5X2M6H2Y;
+				DEVELOPMENT_TEAM = 58FKNDJTS9;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = x86_64;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -903,7 +910,7 @@
 					"-ObjC",
 					"-lresolv",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = im.status.ethereum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matera.homi;
 				PRODUCT_NAME = StatusIm;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StatusIm-Bridging-Header.h";
@@ -924,12 +931,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = StatusIm/StatusIm.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CUSTOM_PRODUCT_NAME = Status;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8B5X2M6H2Y;
+				DEVELOPMENT_TEAM = "";
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -979,10 +985,10 @@
 					"-ObjC",
 					"-lresolv",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = im.status.ethereum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matera.homi;
 				PRODUCT_NAME = StatusIm;
 				PROVISIONING_PROFILE = "e2202b12-7a66-4ff7-af3c-a52e35f32dc1";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc im.status.ethereum";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StatusIm-Bridging-Header.h";
 				SWIFT_VERSION = 5.2;
 				TARGETED_DEVICE_FAMILY = 1;

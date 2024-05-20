@@ -46,6 +46,20 @@
        :blur?       true
        :action      :arrow})
     (when config/show-not-implemented-features?
+      {:title       (i18n/label :t/homi)
+       :on-press    not-implemented/alert
+       :image-props :i/homi
+       :image       :icon
+       :blur?       true
+       :action      :arrow})
+    (when config/show-not-implemented-features?
+      {:title       (i18n/label :t/iot)
+       :on-press    not-implemented/alert
+       :image-props :i/iot
+       :image       :icon
+       :blur?       true
+       :action      :arrow})
+    (when config/show-not-implemented-features?
       {:title       (i18n/label :t/keycard)
        :on-press    not-implemented/alert
        :image-props :i/keycard

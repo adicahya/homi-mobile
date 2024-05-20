@@ -68,6 +68,8 @@
        [gesture/gesture-detector {:gesture communities-double-tab-gesture}
         [bottom-tab :i/communities :communities-stack shared-values notifications-data]]
        [gesture/gesture-detector {:gesture messages-double-tap-gesture}
-        [bottom-tab :i/messages :chats-stack shared-values notifications-data]]
-       [bottom-tab :i/wallet :wallet-stack shared-values notifications-data]
-       [bottom-tab :i/browser :browser-stack shared-values notifications-data]]]]))
+        [bottom-tab :i/messages :chats-stack shared-values notifications-data]] 
+       [bottom-tab :i/homi :homi-stack shared-values notifications-data]
+       [bottom-tab :i/iot :iot-stack shared-values notifications-data]
+       [bottom-tab :i/wallet :wallet-stack shared-values notifications-data]]]]))
+

@@ -15,13 +15,13 @@ if linkage != nil
 end
 
 # If inside a Nix shell, allow pod install
-inside_nix_shell = ENV['IN_NIX_SHELL']
-allow_pod_install = !inside_nix_shell.nil?
+#inside_nix_shell = ENV['IN_NIX_SHELL']
+#allow_pod_install = !inside_nix_shell.nil?
 
-unless allow_pod_install
-    puts "ERROR: 'pod install' must be run inside a Nix shell. Please ensure you're inside a nix shell and try again."
-    exit 1
-end
+#unless allow_pod_install
+#    puts "ERROR: 'pod install' must be run inside a Nix shell. Please ensure you're inside a nix shell and try again."
+#    exit 1
+#end
 
 abstract_target 'Status' do
   # Pods for StatusQuo
